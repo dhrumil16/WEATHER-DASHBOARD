@@ -1,0 +1,99 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100%;
+  color: #fff;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 60%;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0077cc;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-card .temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
